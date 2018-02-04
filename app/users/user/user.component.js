@@ -7,7 +7,7 @@
     
     function user() {
         var component = {
-            templateUrl: '/app/api/users/user/user.component.html',
+            templateUrl: '/app/users/user/user.component.html',
             controller: ApiUserController,
             bindings: {
                 user: '<',

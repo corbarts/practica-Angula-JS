@@ -7,7 +7,7 @@
     
     function userDetail() {
         var component = {
-            templateUrl: '/app/api/users/userDetail/userDetail.component.html',
+            templateUrl: '/app/users/userDetail/userDetail.component.html',
             controller: UserDetailController,
         };
         

@@ -7,7 +7,7 @@
     
     function userList() {
         var component = {
-            templateUrl: '/app/api/users/userList/userList.component.html',
+            templateUrl: '/app/users/userList/userList.component.html',
             controller: ApiUserListController,
         };
         
@@ -25,7 +25,7 @@
         ctrl.$onInit = onInit;
         
         function viewApiUserDetails(userId) {
-            $location.path('/Ausers/'+userId);
+            $location.path('/users/'+userId);
         }
         
         
