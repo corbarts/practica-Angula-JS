@@ -3,18 +3,18 @@
     
     angular
         .module('app.users')
-        .factory('usersService', apiUsersService);
+        .factory('usersService', usersService);
     
     usersService.$inject = [
         '$http'
     ];
     
-    function apiUsersService($http) {
+    function usersService($http) {
         var urlRoot = 'https://reqres.in//';
         
         var service = {
-            getUser: getApiUser,
-            getUsers: getApiUsers,
+            getApiUser: getApiUser,
+            getApiUsers: getApiUsers,
         };
         return service;
         

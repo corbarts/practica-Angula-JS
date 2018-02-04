@@ -8,13 +8,12 @@
     function config($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
-              template: '<b>Para la practica de Angular JS se va a usar la apiRest publiblica <a href="https://reqres.in/"/><br>'
-                        'Se va a usar una petición GET para repurar información de usuarios'
+              template: '<b>Para la practica de Angular JS se va a usar la apiRest publica <a href="https://reqres.in/"/><br>'
         })
-            .when('/api/users', {
+            .when('/users', {
               template: '<user-list></user-list>'
         })
-            .when('/api/users/:userId', {
+            .when('/users/:userId', {
               template: '<user-detail></user-detail>'
         })
         .otherwise('/');

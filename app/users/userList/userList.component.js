@@ -14,24 +14,20 @@
         return component;
     }
     
-    UserListController.$inject = [
+    ApiUserListController.$inject = [
         '$location',
         'usersService',
     ];
     
-    function UserListController($location, usersService){
+    function ApiUserListController ($location, usersService){
         var ctrl = this;
-        ctrl.$onOption = onOption;
-        ctrl.$viewUserDetails = viewApiUserDetails;
+        ctrl.viewApiUserDetails = viewApiUserDetails;
         ctrl.$onInit = onInit;
         
-        function onOption(option){
-            ctrl.orderBy = option;
+        function viewApiUserDetails(userId) {
+            $location.path('/Ausers/'+userId);
         }
         
-        function viewApiUserDetails(userId) {
-            $location.path('/api/users/'+userId);
-        }
         
         function onInit(){
             usersService.getApiUsers()
@@ -39,5 +35,6 @@
                   ctrl.users = data;
             });
         }
+      
     }
 })(window.angular);

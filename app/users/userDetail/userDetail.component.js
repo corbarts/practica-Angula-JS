@@ -7,19 +7,19 @@
     
     function userDetail() {
         var component = {
-            templateUrl: '/app/users/userDetail/userDetail.component.html',
-            controller: ApiUserDetailController,
+            templateUrl: '/app/api/users/userDetail/userDetail.component.html',
+            controller: UserDetailController,
         };
         
         return component;
     }
     
-    ApiUserDetailController.$inject = [
+    UserDetailController.$inject = [
         '$routeParams',
         'usersService',
     ];
     
-    function ApiUserDetailController($routeParams, usersService){
+    function UserDetailController($routeParams, usersService){
         var ctrl = this;
         ctrl.$onInit = onInit;
         

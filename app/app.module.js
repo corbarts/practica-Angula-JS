@@ -3,7 +3,7 @@
     
     angular
         .module('app',[
-            'app.users'/*,
-            'ngRoute'*/
+            'app.users',
+            'ngRoute'
     ]);
 })(window.angular);

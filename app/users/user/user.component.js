@@ -8,7 +8,7 @@
     function user() {
         var component = {
             templateUrl: '/app/api/users/user/user.component.html',
-            controller: UserController,
+            controller: ApiUserController,
             bindings: {
                 user: '<',
             }
@@ -17,5 +17,5 @@
         return component;
     }
     
-    function UserController(){}
+    function ApiUserController(){}
 })(window.angular);

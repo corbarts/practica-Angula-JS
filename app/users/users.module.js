@@ -2,6 +2,6 @@
     'user strict';
     
     angular
-        .module('app.api.users',[]
+        .module('app.users',[]
         );
 })(window.angular);

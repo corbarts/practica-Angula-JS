@@ -1,0 +1,6 @@
+<b>Users List</b>
+<br>
+<div ng-repeat="user in $ctrl.users">
+    <user user="$ctrl.users"></user>
+    <button type="button" ng-click="$ctrl.viewApiUserDetails(user.id)">Details</button>
+</div>
