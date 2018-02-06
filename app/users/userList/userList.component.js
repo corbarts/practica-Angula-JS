@@ -31,8 +31,8 @@
         
         function onInit(){
             usersService.getApiUsers()
-                .then(function (data){
-                  ctrl.users = data;
+                .then(function (response){
+                  ctrl.users = response.data;
             });
         }
       

@@ -1,7 +1,8 @@
 <hr>
 <div>
     <!-- en esta pagina mostraremos la información del usuario que se recupera en la petición GET -->
-    First Name : {{$ctrl.user.firstName}}
-    <br>Last name: {{$ctrl.user.lastName}}
-    <br>Avatar: {{$ctrl.user.avatar}}
+    First Name : {{$ctrl.user.first_name}}
+    <br>Last name: {{$ctrl.user.last_name}}
+    <!-- Este campo son URLs a imagenes --> 
+    <br>Avatar:<br> <img ng-src="{{$ctrl.user.avatar}}">
 </div>

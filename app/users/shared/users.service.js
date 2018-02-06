@@ -10,7 +10,7 @@
     ];
     
     function usersService($http) {
-        var urlRoot = 'https://reqres.in//';
+        var urlRoot = 'https://reqres.in/';
         
         var service = {
             getApiUser: getApiUser,

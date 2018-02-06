@@ -25,8 +25,8 @@
         
         function onInit(){
             usersService.getApiUser($routeParams.userId)
-                .then(function (data){
-                  ctrl.user = data;
+                .then(function (response){
+                  ctrl.user = response.data;
             });
         }
     }
