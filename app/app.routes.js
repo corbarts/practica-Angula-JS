@@ -1,5 +1,5 @@
 (function (angular) {
-    'user strict';
+    'use strict';
     
     angular
         .module('app')
@@ -15,6 +15,12 @@
         })
             .when('/users/:userId', {
               template: '<user-detail></user-detail>'
+        })
+            .when('/posts', {
+              template: '<post-list></post-list>'
+        })
+            .when('/posts/:postId', {
+              template: '<post-detail></post-detail>'
         })
         .otherwise('/');
         
