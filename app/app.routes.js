@@ -1,5 +1,5 @@
 (function (angular) {
-    'use strict';
+    'user strict';
     
     angular
         .module('app')
@@ -13,15 +13,13 @@
             .when('/users', {
               template: '<user-list></user-list>'
         })
+                    .when('/users/create', {
+                template: '<user-create></user-create>'
+        })     
             .when('/users/:userId', {
               template: '<user-detail></user-detail>'
         })
-            .when('/posts', {
-              template: '<post-list></post-list>'
-        })
-            .when('/posts/:postId', {
-              template: '<post-detail></post-detail>'
-        })
+   
         .otherwise('/');
         
     //para activar el modo de uso de HTML5 hay que poner esto.    

@@ -22,12 +22,16 @@
     function ApiUserListController ($location, usersService){
         var ctrl = this;
         ctrl.viewApiUserDetails = viewApiUserDetails;
+        ctrl.createUser = createUser;
         ctrl.$onInit = onInit;
         
         function viewApiUserDetails(userId) {
             $location.path('/users/'+userId);
         }
         
+        function createUser() {
+            $location.path('/users/create');
+        }
         
         function onInit(){
             usersService.getApiUsers()

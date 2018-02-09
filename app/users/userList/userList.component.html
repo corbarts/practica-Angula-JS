@@ -1,6 +1,7 @@
 <b>Users List</b>
 <br>
+<button type="button" ng-click="$ctrl.createUser()">Crear Usuario</button>
 <div ng-repeat="user in $ctrl.users">
     <user user="user"></user>
-    <button type="button" ng-click="$ctrl.viewApiUserDetails(user.id)">Details</button>
+    <button type="button" ng-click="$ctrl.viewApiUserDetails(user.id)">Detalles</button>
 </div>

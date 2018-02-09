@@ -15,6 +15,7 @@
         var service = {
             getApiUser: getApiUser,
             getApiUsers: getApiUsers,
+            postUser: postUser
         };
         return service;
         
@@ -28,6 +29,14 @@
             return $http.get(urlRoot + 'api/users/')
                 .then(complete)
                 .catch(failed);
+        }
+        
+        
+        function postUser(user) {
+          var postUrl = urlRoot + 'api/users/';
+          return $http.post(postUrl, user)
+            .then(complete)
+            .catch(failed);
         }
         
         function complete (response) {

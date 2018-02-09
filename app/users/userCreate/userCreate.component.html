@@ -1,0 +1,14 @@
+<!-- Formulario para nuevos usuarios -->
+<form name="userCreate">
+  <div>
+    <label>Nombre:</label>
+    <br>
+    <input type="text" required ng-model="$ctrl.user.first_name">
+  </div>
+  <div>
+    <label>Apellido:</label>
+    <br>
+    <textarea rows="2" cols="50" required ng-model="$ctrl.user.last_name"></textarea>
+  </div>
+  <button type="submit" ng-click="$ctrl.submit($ctrl.user)" ng-disabled="userCreate.$invalid">Enviar</button>
+</form>
